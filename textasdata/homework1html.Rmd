@@ -1,0 +1,190 @@
+---
+title: "Homework 1: R Code"
+output: html_document
+---
+
+```{r, eval=FALSE}
+# library(readr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(tidytext)
+library(ggplot2)
+library(forcats)
+library(tibble)
+library(scales)
+
+file_a <- "A07594__Circle_of_Commerce.txt"
+file_b <- "B14801__Free_Trade.txt"
+
+
+text_a <- read_file(file_a)
+text_b <- read_file(file_b)
+
+
+texts <- tibble(
+  doc_title = c("Text A", "Text B"),
+  text = c(text_a, text_b)
+)
+
+
+words <- texts %>%
+  unnest_tokens(word, text)
+
+words
+
+before_counts <- words %>%
+  count(doc_title, name = "total_tokens")
+
+
+before_counts
+
+data("stop_words")
+
+
+custom_stopwords <- tibble(
+  word = c(
+    "vnto", "haue", "doo", "hath", "bee", "ye", "thee"
+  )
+)
+
+
+all_stopwords <- bind_rows(stop_words, custom_stopwords) %>%
+  distinct(word)
+
+
+words_clean <- words %>%
+  anti_join(all_stopwords, by = "word")
+
+
+after_counts <- words_clean %>%
+  count(doc_title, name = "tokens_after_stopwords")
+
+
+corpus_diagnostics <- before_counts %>%
+  left_join(after_counts, by = "doc_title") %>%
+  mutate(
+    tokens_removed = total_tokens - tokens_after_stopwords,
+    percent_removed = tokens_removed / total_tokens * 100
+  )
+
+
+print(corpus_diagnostics, width = Inf)
+
+# 第二部分
+word_counts_before <- words %>%
+  count(doc_title, word, sort = TRUE)
+
+
+word_counts_after <- words_clean %>%
+  count(doc_title, word, sort = TRUE)
+
+
+word_counts_before
+word_counts_after
+
+plot_data_before <- word_counts_before %>%
+  pivot_wider(
+    names_from = doc_title,
+    values_from = n,
+    values_fill = 0
+  ) %>%
+  mutate(max_n = pmax(`Text A`, `Text B`)) %>%
+  arrange(desc(max_n)) %>%
+  slice_head(n = 15) %>%
+  pivot_longer(
+    cols = c(`Text A`, `Text B`),
+    names_to = "doc_title",
+    values_to = "n"
+  ) %>%
+  mutate(word = fct_reorder(word, n, .fun = max))
+
+
+plot_before <- ggplot(plot_data_before, aes(x = n, y = word)) +
+  geom_col() +
+  facet_wrap(~ doc_title, nrow = 1) +
+  labs(
+    title = "Before stopword removal",
+    subtitle = "Top 15 words ranked by maximum count across both texts",
+    x = "Word frequency (count)",
+    y = NULL
+  ) +
+  theme_minimal(base_size = 12)
+
+
+print(plot_before)
+
+
+ggsave(
+  "hw1_words_before.png",
+  plot = plot_before,
+  width = 10, height = 6, units = "in",
+  dpi = 300, bg = "white"
+)
+
+plot_data_after <- word_counts_after %>%
+  pivot_wider(
+    names_from = doc_title,
+    values_from = n,
+    values_fill = 0
+  ) %>%
+  mutate(max_n = pmax(`Text A`, `Text B`)) %>%
+  arrange(desc(max_n)) %>%
+  slice_head(n = 15) %>%
+  pivot_longer(
+    cols = c(`Text A`, `Text B`),
+    names_to = "doc_title",
+    values_to = "n"
+  ) %>%
+  mutate(word = fct_reorder(word, n, .fun = max))
+
+
+plot_after <- ggplot(plot_data_after, aes(x = n, y = word)) +
+  geom_col() +
+  facet_wrap(~ doc_title, nrow = 1) +
+  labs(
+    title = "After stopword removal",
+    subtitle = "Top 15 words ranked by maximum count across both texts",
+    x = "Word frequency (count)",
+    y = NULL
+  ) +
+  theme_minimal(base_size = 12)
+
+
+print(plot_after)
+
+
+ggsave(
+  "hw1_words_after.png",
+  plot = plot_after,
+  width = 10, height = 6, units = "in",
+  dpi = 300, bg = "white"
+)
+
+# 第三部分：测试自定义停用词名单的影响
+
+words_standard_only <- words %>%
+  anti_join(stop_words, by = "word")
+
+
+word_counts_standard_only <- words_standard_only %>%
+  count(doc_title, word, sort = TRUE)
+
+
+top15_standard_only <- word_counts_standard_only %>%
+  pivot_wider(
+    names_from = doc_title,
+    values_from = n,
+    values_fill = 0
+  ) %>%
+  mutate(max_n = pmax(`Text A`, `Text B`)) %>%
+  arrange(desc(max_n)) %>%
+  slice_head(n = 15)
+
+
+print(top15_standard_only, n = 15, width = Inf)
+
+
+View(top15_standard_only)
+
+```
