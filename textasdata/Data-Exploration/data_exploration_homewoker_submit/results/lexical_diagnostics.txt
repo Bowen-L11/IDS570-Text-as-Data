@@ -1,0 +1,4 @@
+Article documents: 18
+Untrimmed features: 9028
+Trimmed features: 2975
+Spearman rank agreement trimmed/untrimmed: 0.996676182434696

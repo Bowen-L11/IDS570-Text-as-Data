@@ -1,0 +1,11 @@
+﻿"sample_stratum","label","confidence","sentences"
+"matched","不确定","拿不准",1
+"matched","主张主权／自主","拿得准",6
+"matched","其他","拿不准",1
+"matched","寻求／承诺合作","拿得准",4
+"matched","表达威胁／谴责","拿得准",3
+"unmatched","不确定","拿不准",1
+"unmatched","主张主权／自主","拿得准",3
+"unmatched","其他","拿不准",5
+"unmatched","寻求／承诺合作","拿得准",2
+"unmatched","表达威胁／谴责","拿得准",4

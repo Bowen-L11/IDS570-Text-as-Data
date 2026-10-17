@@ -1,0 +1,22 @@
+doc_id,group,genre,title,before_stopwords,cleaned_tokens,types
+A01,A,journal_article,"Networks of military alliances, wars, and international trade",5573,2808,1018
+A02,A,journal_article,Extended deterrence and alliance formation,5984,2946,767
+A03,A,journal_article,An Ironclad Friend: Explaining Cambodia’s Bandwagoning Policy towards China,7128,4240,1663
+A04,A,journal_article,Bandwagon for Status: Changing Patterns in the Nordic States Status-seeking Strategies?,7771,4411,1389
+A05,A,journal_article,"What Allies Want: Reconsidering Loyalty, Reliability, and Alliance Interdependence",13176,7419,2083
+A06,A,journal_article,The Myth of Entangling Alliances: Reassessing the Security Risks of U.S. Defense Pacts,12516,7215,2367
+B01,B,journal_article,Power Sharing and Leadership Dynamics in Authoritarian Regimes,10793,5723,1452
+B02,B,journal_article,"Regime Type, the Fate of Leaders, and War",7961,4200,1280
+B03,B,journal_article,"The Foundations of Limited Authoritarian Government: Institutions, Commitment, and Power-Sharing in Dictatorships",8709,4550,1417
+B04,B,journal_article,"Why cronies don’t cry? IMF programs, Chinese lending, and leader survival",8508,5296,1531
+B05,B,journal_article,"Political Succession: A Model of Coups, Revolution, Purges, and Everyday Politics",14484,7137,1730
+B06,B,journal_article,"The Perils of Unearned Foreign Income: Aid, Remittances, and Government Survival",9464,5779,1531
+C01,C,journal_article,Quid Pro Quo Diplomacy,9016,4474,1378
+C02,C,journal_article,Competition and Collaboration in Aid-for-Policy Deals,12132,6282,1522
+C03,C,journal_article,Political Conditionality and Foreign Aid,6489,3967,1532
+C04,C,journal_article,When Does Aid Conditionality Work?,9292,5448,1273
+C05,C,journal_article,"Leader Turnover, Institutions, and Voting at the UN General Assembly",6359,3797,1170
+C06,C,journal_article,"Foreign aid withdrawals and suspensions: Why, when and are they effective?",7945,4671,1608
+S01,S,official_speech,Armenia — UNGA77 national statement,1986,1069,579
+S02,S,official_speech,Singapore — UNGA77 national statement,1990,1128,662
+S03,S,official_speech,Kazakhstan — UNGA77 national statement,2140,1248,767

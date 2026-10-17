@@ -1,0 +1,31 @@
+country,category,certainty,sentences
+Armenia,Sovereignty / autonomy,Coder confident,3
+Armenia,Sovereignty / autonomy,Coder uncertain,0
+Armenia,Cooperation,Coder confident,2
+Armenia,Cooperation,Coder uncertain,0
+Armenia,Threat / condemnation,Coder confident,4
+Armenia,Threat / condemnation,Coder uncertain,0
+Armenia,Other,Coder confident,0
+Armenia,Other,Coder uncertain,0
+Armenia,Undetermined,Coder confident,0
+Armenia,Undetermined,Coder uncertain,1
+Singapore,Sovereignty / autonomy,Coder confident,3
+Singapore,Sovereignty / autonomy,Coder uncertain,0
+Singapore,Cooperation,Coder confident,3
+Singapore,Cooperation,Coder uncertain,0
+Singapore,Threat / condemnation,Coder confident,1
+Singapore,Threat / condemnation,Coder uncertain,0
+Singapore,Other,Coder confident,0
+Singapore,Other,Coder uncertain,2
+Singapore,Undetermined,Coder confident,0
+Singapore,Undetermined,Coder uncertain,1
+Kazakhstan,Sovereignty / autonomy,Coder confident,3
+Kazakhstan,Sovereignty / autonomy,Coder uncertain,0
+Kazakhstan,Cooperation,Coder confident,1
+Kazakhstan,Cooperation,Coder uncertain,0
+Kazakhstan,Threat / condemnation,Coder confident,2
+Kazakhstan,Threat / condemnation,Coder uncertain,0
+Kazakhstan,Other,Coder confident,0
+Kazakhstan,Other,Coder uncertain,4
+Kazakhstan,Undetermined,Coder confident,0
+Kazakhstan,Undetermined,Coder uncertain,0

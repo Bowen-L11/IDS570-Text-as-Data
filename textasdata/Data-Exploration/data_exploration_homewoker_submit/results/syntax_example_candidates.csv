@@ -1,0 +1,21 @@
+doc_id,paragraph_id,sentence_id,sentence,words,clauses,dependent,coordination,nominals,distance_from_typical
+B06,1,111,"Governments also care about private goods (patronage goods) and welfare goods, but do so in relation to their main objective of staying in power.",24,1,1,4,6,1
+B06,1,344,"According to the formal model, there are two channels through which unearned foreign income funds patronage and raises the prospect of government survival.",23,2,1,1,7,1
+B06,1,415,"In fact, this article’s empirical findings tying unearned foreign income to political survival may be viewed as a form of “transferred” resource curse.",24,1,1,0,8,1
+B06,1,51,The first section discusses the existing literature relating foreign aid and remittances to government survival and the role of patronage in autocracies.,22,1,1,4,7,2
+B06,1,52,The next section presents a model tying unearned government and unearned household income to a government’s prospect of political survival and derives testable implications.,25,1,1,4,8,2
+B06,1,131,"Equation (6) also shows that some fraction of aid, (1 ) , is spent on welfare goods and the rest goes to the provision of patronage goods.",25,3,1,2,6,2
+B06,1,132,"For instance, in more autocratic polities a smaller fraction of aid is spent on welfare goods, because is larger (i.e., closer to 1).",23,2,1,0,6,2
+B06,1,173,"The first coincides with the Gulf War in 1990, after which oil prices fell again, along with unearned foreign income originating from the Persian Gulf.",25,1,1,0,8,2
+B06,1,185,"Moreover, because the two equations are estimated jointly, the errors in the second stage take into account the estimation error in the first stage.",24,1,0,1,8,2
+B06,1,187,"Over the sample period, the average POLITY score for the treatment group is 2.4, which falls far below the standard +6 threshold for democratic governance.",25,2,1,0,8,2
+C04,1,158,"While each institution eschews legally conditioning its disbursements on conditions of the other, they often engage in less formal means of crossconditionality (Feinberg 1988).",24,1,1,0,6,0
+C04,1,65,"In authoritarian settings, special interest groups, such as the military, also secure their preferred policies because they help governments survive by repressive means.",23,2,1,2,6,1
+C04,1,119,"In the long run, the more aid leaders in small W systems accumulate the greater is their probability of survival (Kono and Montinola 2009).",24,2,1,2,7,1
+C04,1,223,"The bottom half of each model presents coefficients for the 1 year lagged variables, indicating the effects of these variables after approximately 1 year.",24,1,1,0,5,1
+C04,1,266,"Finally, the conditional aid coefficients become positive and significant for countries with scores equal to or higher than 0.75 on W and the ACLP measure.",25,1,1,6,6,1
+C04,1,15,"But proponents began to attribute aid recipients lack of development to their failure to implement fully policy reforms (e.g., Kuczynski Godard and John 2003).",24,1,2,4,5,2
+C04,1,39,"Since democrats are unable to stockpile as much aid as autocrats, current aid disbursements have a greater impact on their survival prospects.",22,2,1,1,6,2
+C04,1,51,"I perform two-stage least-squares instrumental variable analyses to correct for endogeneity bias, and the results of my analysis are essentially unchanged.",22,2,1,2,6,2
+C04,1,110,"Any delays in aid disbursement, or reductions in aid from previous years, increase the probability that leaders in large W systems will lose power.",24,2,1,2,8,2
+C04,1,159,Consultations between the two institutions occur from the staff level to the level of the Bank s President and the Fund s Managing Director.,24,1,0,2,5,2

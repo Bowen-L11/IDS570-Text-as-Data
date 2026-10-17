@@ -1,0 +1,35 @@
+word,documents,doc_ids
+aid,4,C02; C03; C04; C06
+alliance,4,A01; A02; A05; A06
+alliances,3,A01; A02; A06
+allies,3,A05; A06; B03
+china,3,A03; A06; B04
+coalition,3,B01; B05; C05
+conditionality,3,C03; C04; C06
+donor,3,C02; C03; C06
+donors,3,C02; C03; C06
+ally,2,A05; B03
+authoritarian,2,B01; B03
+chinese,2,A03; B04
+concessions,2,C01; C02
+coup,2,B01; B05
+dictator,2,B01; B03
+dictatorship,2,B01; B02
+dictatorships,2,B01; B03
+imf,2,B04; C04
+leader,2,B02; C05
+leaders,2,B02; B04
+nato,2,A04; A06
+nondemocratic,2,B02; C05
+oil,2,B03; B06
+rebellion,2,B03; B05
+recipient,2,C03; C06
+recipients,2,C04; C06
+reliability,2,A02; A05
+ruling,2,B01; B03
+salience,2,C01; C02
+sharing,2,B01; B03
+signal,2,B01; C01
+united,2,A06; C05
+vietnam,2,A03; A06
+war,2,A01; B02

@@ -1,0 +1,2 @@
+doc_i,doc_j,pearson,group_i,group_j,same_group,group_pair,shared_author,selection_rule
+B06,C04,0.38936559310871,B,C,FALSE,B–C,FALSE,Highest Pearson cross-group pair without a shared author

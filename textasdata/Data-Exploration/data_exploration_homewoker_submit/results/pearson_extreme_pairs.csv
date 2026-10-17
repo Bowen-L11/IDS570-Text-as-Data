@@ -1,0 +1,5 @@
+doc_i,doc_j,pearson,group_i,group_j,same_group,rank_type
+C03,C06,0.66573468471298,C,C,TRUE,most similar
+A05,A06,0.64092799848215,A,A,TRUE,most similar
+A05,B06,0.00754052604739,A,B,FALSE,least similar
+A02,C03,0.01863823459726,A,C,FALSE,least similar
