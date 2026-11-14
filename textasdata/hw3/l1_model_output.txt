@@ -1,0 +1,87 @@
+l1_model | scikit-learn 1.9.1
+Train=14654; Test=3664; Features=15684
+Train SHA256: be4d7efd344841ef9668d8871e2ffd4fc928b188498ee6f81c9a4264acec9ac4
+Test SHA256:  dd40ed32289c86bfac6272003ac885b3206cfada3f989fccf538eb7427ab20ad
+
+Confusion matrix: rows=weak labels, columns=predictions; order=[NEG, CORE]
+[[1850    0]
+ [   9 1805]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+         NEG   0.995159  1.000000  0.997573      1850
+        CORE   1.000000  0.995039  0.997513      1814
+
+    accuracy                       0.997544      3664
+   macro avg   0.997579  0.997519  0.997543      3664
+weighted avg   0.997556  0.997544  0.997544      3664
+
+ROC AUC: 0.999657618
+Non-zero coefficients: 30 / 15684 (intercept excluded)
+Iterations: [13]; no convergence warning
+
+Top 15 strictly positive / CORE words:
+trade                    +175.485145653
+merchants                +141.322905451
+merchant                 +124.487987118
+marchants                +88.437048271
+marchant                 +65.715342861
+factor                   +56.665905696
+staple                   +55.763879179
+adventurers              +41.043415485
+chapman                  +34.674415558
+adventurer               +28.231303900
+purser                   +27.566859754
+ship                     +2.339292762
+pounds                   +1.807388395
+have                     +1.349992657
+william                  +1.143599967
+
+Top 7 strictly negative / NEG words:
+god                      -2.641967689
+that                     -2.329950187
+it                       -1.341721732
+not                      -0.413567993
+but                      -0.260617750
+his                      -0.183582089
+christ                   -0.086028498
+Fewer than 15 non-zero coefficients of this sign; zeros are not added.
+
+Fixed review sample: 9 errors (at most 10).
+
+Test index 222 | FN | weak_label=1 prediction=0 P(CORE)=0.195823
+Francfort 169 cloth 80 . Norimberge 160 el. silke 138 el. Vienna for linnen 103 el. Ditto for silke 113 el. Prague 14 el. Ditto for 160 el. Vlme 160 el. Ditto for wollen 128 el. Lipsicke 160 el. cloth Ossenbrigs 84 els. Breme 163 el. Hamburge 163 el. Basill 167 el. Bantson 148 el. el. lle el. el. cloth Ditto 138 el. long . 1 el. Ditto short measures 1 3 el. Zearech el. Statin el. Ocermond 1 el. Wismar 157 el. Gripswald 163 el. The rest I willingly omit for brevity sake, and to the triall of the better experienced. CHAP. CCIX. Of the trade in generall of Germany.
+
+Test index 378 | FN | weak_label=1 prediction=0 P(CORE)=0.021868
+Perhaps Nouatus or Donatus (those
+Saints) with their Schooles had some little glimpse
+of it; but this perfection of knowledge is but late and
+new: So, many rich mines haue lien long vnknown,
+and great parts of the world haue been discouered by
+late Venturers. If this course haue come late to your
+knowledge and obedience, not so to others: For loe,
+it was practised successiuely in the constitution and
+collection of all t^ue
+Churches,Sep. Which enmity hath not onely beene successiuely continued, but also visibly manifested by the actuall separation of all true Churches, from the world in their collection and constitution, before the law, vnder the law, and vnder the Gospell, Gen. 4: 13, 14, 16 and 6.
+
+Test index 681 | FN | weak_label=1 prediction=0 P(CORE)=0.498240
+O Princes (subiects vnto pride and pleasure) Who (to enlarge, but a hair's breadth, the measure Of your Dominions) breaking Oaths of Peace, Couer the Fields with bloudy Carcases: O Magistrates, who (to content the Great) Make sale of Iustice, on your sacred Seat; And, broaking Laws for Bribes, profane your Place, To leaue a Leek to your vnthankfull Race: You strict Extorters, that the Poor oppress, And wrong the Widdow and the Father-less, To leaue your Off-spring rich (of others good) In Houses built of Rapine and of Blood: You City-Vipers, that (incestuous) ioyn Vse vpon vse, begetting Coyn of Coyn: You Marchant Mercers, and Monopolites, Gain-greedy Chap-men, periur'd Hypocrites, Dissembling Broakers, made of all deceipts, Who falsifie your Measures and your Weights, T' inrich your selues, and your vnthrifty Sons To Gentillize with proud possessions: You that for gain betray your gracious Prince, Your natiue Country, or your deerest Friends: You, that to get you but an inch of ground, With cursed hands remoue your Neigbours bound (The ancient bounds your Ancestors haue set) What gain you all?
+
+Test index 1352 | FN | weak_label=1 prediction=0 P(CORE)=0.326535
+good my lord remember the poor widow mite for sure if I can do more in this service or otherwise it shall not be omit from Middleborough this first of August 1600. your lordship most dutiful servant JOHN Davis a brief relation of master JOHN Davis chief pilot to the zelander in their East-India voyage depart from Middleborough the fifteen of march 1598. the fifteen hereof we depart from Flushing with two ship in consort the lion and lioness the lion be four hundred tun have in she a hundred three and twenty person the lioness two hundred and fifty tun have a hundred person mushroom clerk and monef of Middleborough owner and only adventurer thereof Cornelius Howteman chief commander of both ship have a commission from grave Maurice by the name general the two and twenty we anchor in Tor bay with bad wind the seven we set sail the twenty we have sight of Porto santo the three and twenty we fall with Palma the last hereof we come with the island of cape Verde April the first we anchor at saint Nicholas one of the say land in latitude sixteen degree sixteen minute here we water the seven we depart the nine may.
+
+Test index 1659 | FN | weak_label=1 prediction=0 P(CORE)=0.029509
+All the venturers in the great ship called Argonavis, bound for Colchis to fetch the golden fleece, when they were assaulted by the Syrens, endevouring to enchant them with their songs, found no such help in any thing against them, as in Orpheus his pipe: wee are all venturers for a golden crowne in heaven, and as the Grecians, so wee are way-laid by Syrens, evill spirits, and their incantations, from which we cannot be safe, but by listening to the Preachers of the Gospel, who when they pipe unto us out of the word, our hearts dance for joy. In that golden chaine of the Apostle, the first linke is hung at the eare, Faith commeth byRom.
+
+Test index 1904 | FN | weak_label=1 prediction=0 P(CORE)=0.406125
+In the custome of Exchange amongst Merchants, the place gi∣veth the Broken number to all Italy, excepting to the Kingdome of Naples, to Sicilia, Bollonia, and Bergamo, and to all others it giveth the whole number, which is either by one Ducat or by a 100 Ducats. Rome doth ex∣change with Placentia Duc. 97¾ for 100 Crownes. Lions Duc. 97½ for 100 Crownes. Genoa Duc. 97 for 100 Cro. of Gold. Millan Duc. 97¼ for 100 Cro. of Gold. Venice Duc. 85⅕ for 100 Ducats. Florence Duc. 91¼ for 100 Crownes. Lucca Duc. 84 for 100 Duccatons Naples Duc. 100 for 135 Ducca. Lecchie Duc. 100 for 134 Duccats. Barri Duc. 100 for 134 Duc. Palermo Ducat.
+
+Test index 2155 | FN | weak_label=1 prediction=0 P(CORE)=0.476706
+William Gregory, Shriue. Iohn Michael Fishmonger Maior. An, reg, 15. Part of Lon¦don bridge fell. The gate on London bridge, with the tower vpon it next to Southwarke: fell downe, & the 2. furthe arches of the saide bridge, and no man perished. 1437 An Alder∣man of Lon¦don War∣den of Norwich. An, reg, 16. King Henry put downe the Maior of Norwich, sent the Aldermen some to Lyn, some to Canter∣bury, tooke their Franchises into his hand, and ap∣pointed Iohn Wels sometime Maior of London to be Warden of Norwich. All the Lions in the Tower of London died. William Hales, Shriue. William Chapman, Shriue. VVilliam Eastfield Mercer Maior.
+
+Test index 2476 | FN | weak_label=1 prediction=0 P(CORE)=0.495367
+of Alexandria Zero is in Rhagusa 260 l ^' the 100 l ^' forfori is in Rhagusa 116 l' the 100 ℞ laidin, is in Rha∣gusa 165 l' the 100 ℞ of Damietta, is in Rhagusa 120 l', the 100 ℞ of Roma, is in Rhagusa 666 l', the 100 ℞ of Baruti is in Rhagusa 625 l' the 100 ℞ Damasco, is in Rhagusa 600 l', the 100 ℞ of Tripost in So∣ria, is in Rhagusa 500 l', the 100 ℞ of Alleppo is in Rhagusa 600 l', the 100 ℞ of Rhodes and Gasa, is in Rhagusa 666⅓ l', the 100 ℞ of Cyprus, is in Rhagusa 625 l', the 100 ℞ of Bursia in Natolia, is in Rhagusa 146 l' the 100 ℞ of Constantinople, is in Rhagusa 146 l', and the 100 l' in Rhagusa doth make as followeth: In Puglia 39 ℞ Puglia 110 l' Rome 101 Florence 105 Perosa 95 Siena 108 Acquilla 107 Lansan 106 Vrbino 106 Crema 111 Piemont 101 Forli 111 Faensa 110 In Cesena 106 l' Ricanati 107 Camerino 108 Bollonia 110 Lucca 106 Millano 111 Verona 108 Bressia 111 Ferara 106 Modena 109 Genoa 114 Fanno 106 Further matter worthy mentioning that concernes either the weight, measure, or trade of this place I have not observed, therefore I passe it over; and hence take my journey to Grecia, the next place which challengeth my survey.
+
+Test index 3132 | FN | weak_label=1 prediction=0 P(CORE)=0.024270
+But when whole housholds further off were sent, You would have thought the Master of it, meant To furnish forth some Navy, and that he Had got his neighbours venturers to be. For all the neare acquaintance thereabout, By lending somewhat holpe to set them out. What hiring was there of our hackney Iades? Wh t scouring up of old, and rusty blades? What running to and fro was there to borrow A Safegard, or a Cl ke, untill the morrow? What shift made Iack for girths? what shift made Gil∣lian To get her neighbors footstoole, & her pillian, Which are not yet etu n'd?

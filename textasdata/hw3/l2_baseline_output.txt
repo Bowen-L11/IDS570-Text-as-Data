@@ -1,0 +1,105 @@
+l2_baseline | scikit-learn 1.9.1
+Train=14654; Test=3664; Features=15684
+Train SHA256: be4d7efd344841ef9668d8871e2ffd4fc928b188498ee6f81c9a4264acec9ac4
+Test SHA256:  dd40ed32289c86bfac6272003ac885b3206cfada3f989fccf538eb7427ab20ad
+
+Confusion matrix: rows=weak labels, columns=predictions; order=[NEG, CORE]
+[[1790   60]
+ [ 152 1662]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+         NEG   0.921730  0.967568  0.944093      1850
+        CORE   0.965157  0.916207  0.940045      1814
+
+    accuracy                       0.942140      3664
+   macro avg   0.943443  0.941887  0.942069      3664
+weighted avg   0.943230  0.942140  0.942089      3664
+
+ROC AUC: 0.988967490
+Non-zero coefficients: 15684 / 15684 (intercept excluded)
+Iterations: [14]; no convergence warning
+
+Top 15 strictly positive / CORE words:
+trade                    +27.126350394
+merchants                +20.103881688
+merchant                 +17.144988072
+marchants                +12.683338794
+marchant                 +8.483723986
+factor                   +5.242352552
+staple                   +4.552622766
+commodities              +3.921905865
+buy                      +3.267430533
+ships                    +3.170380873
+ship                     +3.132261855
+chapman                  +2.837044661
+sell                     +2.732397138
+money                    +2.648179755
+rich                     +2.531491163
+
+Top 15 strictly negative / NEG words:
+god                      -2.330152642
+rather                   -1.825502006
+power                    -1.810821731
+faith                    -1.689445248
+after                    -1.687278640
+vertue                   -1.608906578
+enemies                  -1.601861083
+spirit                   -1.486514867
+christ                   -1.456481745
+saith                    -1.442541029
+bloud                    -1.429763941
+leaues                   -1.417387824
+were                     -1.356485286
+lib                      -1.312004892
+against                  -1.297926062
+
+Fixed review sample: 10 errors (at most 10).
+
+Test index 153 | FP | weak_label=0 prediction=1 P(CORE)=0.525757
+He died by the way returning homewards. The
+most part of his men remained in that riuer, and builded a
+great towne containing now two thousand houses, wherein
+great store of Indians dwell with the Spanyards. They discouered
+and conquered the countrey till they came to the mines
+of Potossi and to the towne La Plata,The riuer of Plata runneth vp to Potossi. which is 500. leagues
+distant from them. In the yeere 1536. Cortes vnderstanding that his ship
+wherein Fortunio Ximenez was pilote was seased on by
+Nunnez de Guzman,Gomara hist gen. lib.
+
+Test index 459 | FP | weak_label=0 prediction=1 P(CORE)=0.568009
+Commodities by the bogging of Turfe.And here I cannot omit to say something of the commodities which wil redound hereby to the commonwealth, namely all boggie wast grounds and quagmires (vnprofitable and dangerous for feeding of cattle and deere) shall be conuerted to profitable vses, in the making of Peate and Turfe, and (in time) with the oft dreaning of the waters, turne to firme ground and fish-ponds. It will preuent the oft drowning of deere and cattell, venturing for some grasse growing in bogs and quagmires, whereby also many of them become rotten by drinking the vnwholesome red waters thereof.
+
+Test index 494 | FN | weak_label=1 prediction=0 P(CORE)=0.477689
+He assailed the Romanes armie vpon the confines of Lycia, and put it to rout,
+so as the emperour Constant then raigning, was forced to flie in a disguised habit. Muhauias
+being puft vp with this victorie,Rhodes taken by Muhauias. he besieged and tooke Rhodes, beat downe that great Collosse
+of the Sunne, being 70 cubits high, or 80, as some write, and sold the mettall to a merchant
+Iew, who laded 900 cammels therewith, and carried moreouer out of that island, infinit
+other goodly and rich workes, for it was replenished with such things, as Plinie writes, who
+witnesseth, that there hath beene numbred in it 73000 figures, or statues, and an hundred
+Colosses.
+
+Test index 749 | FN | weak_label=1 prediction=0 P(CORE)=0.481475
+In these Tribunes time, whiles every mans care was bent to the Veientian war, The fort of Anxur being neglected, by occasion that the garrison souldiors were disbanded and raunged much abroad, and commonly received Volscian marchants into the town, was suddainly surprised, by reason that the warders of the gates were betraied. Lesse companie of souldiours
+
+ there were slaine: because that all of them (besides those that were sicke) found themselves occupied and traded all the countrie over, and in the citties adjoyning, like to lawlesse lackies that follow the campe. Neither was there better successe at Veij, wherein rested the chiefe care now, of all their publicke affaires.
+
+Test index 1149 | FP | weak_label=0 prediction=1 P(CORE)=0.515003
+l. 5. c. 31. that when as their ship and mine be not able to waste they it be make lawful for any man to fell and destroy they and for his labour to possess the land which he have so clear bartholomaeus Saligniacus say he see fly fish in the sea about Cyprus which in the atlantike ocean be common he see also a ram in Cyprus with seven horn HONDIUS his map of Cyprus CYPRUS in the time of Constantine it be forsake of the inhabitant as before forsake of the element which refuse to water with any drop of rain that island sometime call macaria or happy the space of seventeen year together or as other have it six and thirty repeople from diverse part by Helena the mother of Constantine u u quadi geographia and remain to the greek empire till that lion of England make it a prey and the knight purchase who sell it to Guido Lusignun who posterity fail the venetian succeed till SEYLIM the second mind to erect a religious hospital to testify his magnificence in Hak.
+
+Test index 1166 | FN | weak_label=1 prediction=0 P(CORE)=0.487363
+Others, as Tygers, and inraged Lyonesses, arm'd with fury and frenzie, setting upon those, whom they have suspected to have wrong'd them in their Mates: as a Merchant killing his Wife in his humour,Apud Fulgosum, et Poggium. afterwards precipitating himselfe; a Doctor of the Law, cutting off his mans nose: chiefly Women (that like all K. James his Observation on the 5. Petition of the Lords Prayer. Cowards, are most cruell, where they prevaile) have exceeded. That Queene IOAN of Spaine, that tyrannized over a poore Wench, with whom shee suspected her Husband, cutting off her haire, and dragging her about: yea our English Queene Elianor, as a second Medea poysoning and tyranizing over, that faire In t^ strit Chronicis.
+
+Test index 1234 | FN | weak_label=1 prediction=0 P(CORE)=0.469878
+And I knew a Iudge my A Iudge on an ill condition, and a worse conscience. selfe, to whom a Merchant paid a round summe to haue him passe a sentence on his side, thinking thereby so to affright the aduerse party, that despayring of any hope of good in his sute, he might draw him to what composition it plea∣sed him: Which a particular friend of his vnderstanding, came vnto the Iudge, and told him; I wonder, Sir, how you could sentence this cause in this manner, being so contrary, as it is, to all Law and reason. To whom, the Iudge answe∣red, That it made no great matter.
+
+Test index 2848 | FP | weak_label=0 prediction=1 P(CORE)=0.512223
+l. 6. c. 1. mention this bishopric and monastery and cathedral church with a friary four hundred soldier in pay beside three hundred other it be account the maiden town and invincible and be the spanish key and their first town in the indies he bring from thence near fourscore cast piece and much other wealth this island be first conquer by John ponce and by he inhabit the natural be altogether like in religion and manner to the inhabitant of hispaniola and so be the plant and fruit also Ouiedo have write hereof large in his sixteen book there grow the tree call santo more excellent than Guaiacan for the neapolitan and many other disease there be also white gum good for ship in stead of pitch and there be bat which the inhabitant do eat these island be not so well people as in former time and many of they be retire place of rebel and fugitive which take this shelter against the spanish cruelty hispaniola be the next island of name but shall have a place by itself as a map and Summarie of all the other jamaica be almost as large as Boriquen e e of it read Ouied.
+
+Test index 3067 | FP | weak_label=0 prediction=1 P(CORE)=0.708222
+and other places by pounds tournois of twentie stiuers, or fortie pence Flemish, whereof six called guildren or florins, make the pound Flemish in all the seuenteene prouinces of the Netherlands. Some do reckon by pounds Parasis, which are but twentie pence,Pound Parasis. whereof twelue make the pound Flemish: but their accounts (as also the reckonings of their Prince, or Finances) are kept by pounds Tournois, which pound they diuide into twentie shillings, euery shilling into twelue pence; and the like is done by the pound Parasis, and these haue also their subdiuisions of Obulus, Maille, Heller, Hallinck, Corte, Mites, Point engeuin, Poot, and such like copper moneys, too tedious to rehearse. In Germanie, in the yeare 1520,Gold guilder.
+
+Test index 3292 | FN | weak_label=1 prediction=0 P(CORE)=0.236321
+They cannot smell, or feele, taste, heare, or see, And thousand times be'ng told, yet cannot tell, Th'ar lock'd, and barr'd, and bolted vp in thrall, Which shewes their Nature not Angelicall. (63) His Royalls doth not Royallize himselfe, Or make him better then he is, or was, In spight of all his ill got canker'd Pelfe, Hee's but a miserable golden Asse: The Deuills deare darling, a most hatefull Else, Which as Hells Factor on the Earth doth passe. Were euery haire about him made a Royall, He were a Wreath, to God and Men disloyall.
